@@ -44,9 +44,9 @@ a {
   padding: 100px 0;
   background: linear-gradient(
       rgba(255, 255, 255, 0.9),
-      rgba(255, 255, 255, 0.9)
+      rgba(218, 215, 215, 0.9)
     ),
-    url("../images/hero-image.jpg") no-repeat center center;
+    url("../images/hero-image2.jpeg") no-repeat center center;
   background-size: cover;
 }
 
@@ -76,6 +76,14 @@ a {
 
 .service-card img {
   height: 200px;
+  object-fit: cover;
+}
+
+.card-img-top1 {
+  height: 200px;
+  width: 50%;
+  align-self: center;
+  border-radius: 200px;
   object-fit: cover;
 }
 
@@ -187,4 +195,16 @@ a {
   .btn-lg {
     width: 100%;
   }
+}
+.custom-img-wrapper {
+  max-width: 400px; /* Adjust as needed */
+  margin: 0 auto; /* Center image if desired */
+}
+
+.custom-img {
+  width: 30%;
+  height: 40%;
+  display: block;
+  border-radius: 10px; /* Optional: Add some style */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Optional: Add depth */
 }
