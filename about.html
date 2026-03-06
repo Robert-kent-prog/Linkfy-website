@@ -3,382 +3,296 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Linkfy - Connecting Service Seekers & Providers</title>
+    <meta
+      name="description"
+      content="Learn about Linkfy's mission, trust model, and platform capabilities connecting service seekers and providers."
+    />
+    <title>About Linkfy</title>
 
     <link href="assets/images/logo.png" rel="icon" />
-    <link href="assets/images/logo.png" rel="linkfy-icon" />
-    <!-- Bootstrap CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
-    <link
-      href="assets/vendor/glightbox/css/glightbox.min.css"
-      rel="stylesheet"
-    />
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <!-- Font Awesome -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <div class="site-topbar">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="topbar-meta">
+          <a href="tel:+254793587026"><i class="bi bi-telephone"></i> +254 793 587 026</a>
+          <a href="mailto:support@linkfy.co.ke"><i class="bi bi-envelope"></i> support@linkfy.co.ke</a>
+        </div>
+        <div class="topbar-links">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms-of-service.html">Terms</a>
+          <a href="do-not-sell-info.html">Data Controls</a>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light site-navbar">
       <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <img src="assets/images/logo.png" alt="Linkfy Logo" height="40" />
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="assets/images/logo.png" alt="Linkfy" class="brand-logo" />
+          <span class="brand-text">Linkfy</span>
         </a>
+
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="services.html">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="btn btn-outline-light ms-lg-3"
-                href="/index.html#download"
-                >Download App</a
-              >
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+            <li class="nav-item"><a class="nav-link" data-page="index.html" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" data-page="services.html" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" data-page="about.html" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" data-page="contact.html" href="contact.html">Contact</a></li>
+            <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+              <a class="btn btn-primary nav-cta" href="index.html#download">Get the App</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <!-- About Hero Section -->
-    <section class="hero-section bg-light">
-      <div class="container py-5">
-        <div class="row align-items-center">
-          <div class="col-lg-6">
-            <h1 class="display-4 fw-bold mb-4">About Linkfy</h1>
-            <p class="lead mb-4">
-              Connecting service seekers with trusted professionals since 2025.
-            </p>
-          </div>
-          <div class="col-lg-6">
-            <img
-              src="assets/images/team.jpeg"
-              alt="Linkfy Team"
-              class="img-fluid rounded"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Our Story -->
-    <section class="py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 order-lg-2">
-            <img
-              src="assets/images/our_story.jpeg"
-              alt="Our Story"
-              class="img-fluid rounded mb-4 mb-lg-0"
-            />
-          </div>
-          <div class="col-lg-6 order-lg-1">
-            <h2 class="mb-4">Our Story</h2>
-            <p>
-              Linkfy was founded in 2025 with a simple mission: to make finding
-              reliable service professionals as easy as a few taps on your
-              phone.
-            </p>
-            <p>
-              After experiencing the frustration of searching for trustworthy
-              plumbers, electricians, and other service providers, our founder
-              set out to create a platform that would connect people with vetted
-              professionals in their area.
-            </p>
-            <p>
-              Today, Linkfy serves thousands of customers across Kenya, helping
-              them find the right professionals for their needs while empowering
-              service providers to grow their businesses.
-            </p>
+    <main>
+      <section class="hero-section">
+        <span class="hero-blob blob-a" aria-hidden="true"></span>
+        <div class="container position-relative">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-7">
+              <div class="hero-kicker"><i class="bi bi-people"></i> About Linkfy</div>
+              <h1 class="hero-title">A service marketplace focused on trust, speed, and clarity.</h1>
+              <p class="hero-subtitle mb-0">
+                Linkfy started to remove the friction in finding reliable service professionals. Today, we support both
+                service seekers and providers with secure communication, verified identities, and trackable request
+                workflows.
+              </p>
+            </div>
+            <div class="col-lg-5">
+              <img
+                src="assets/images/team.jpeg"
+                alt="Linkfy team"
+                class="img-fluid rounded-4 shadow"
+              />
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Our Mission -->
-    <section class="py-5 bg-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <img
-              src="assets/images/misson.jpeg"
-              alt="Our Mission"
-              class="img-fluid rounded mb-4 mb-lg-0"
-            />
-          </div>
-          <div class="col-lg-6">
-            <h2 class="mb-4">Our Mission</h2>
-            <p>
-              We believe that everyone deserves access to reliable, high-quality
-              service professionals when they need them.
-            </p>
-            <p>Our platform is designed to:</p>
-            <ul class="list-unstyled">
-              <li class="mb-2">
-                <i class="fas fa-check-circle text-primary me-2"></i> Make it
-                easy to find trusted professionals
-              </li>
-              <li class="mb-2">
-                <i class="fas fa-check-circle text-primary me-2"></i> Provide
-                transparent pricing and reviews
-              </li>
-              <li class="mb-2">
-                <i class="fas fa-check-circle text-primary me-2"></i> Support
-                local service providers
-              </li>
-              <li>
-                <i class="fas fa-check-circle text-primary me-2"></i> Create a
-                seamless booking experience
-              </li>
-            </ul>
+      <section class="content-section pt-4">
+        <div class="container">
+          <div class="row g-4 align-items-center">
+            <div class="col-lg-6">
+              <img
+                src="assets/images/our_story.jpeg"
+                alt="Our journey"
+                class="img-fluid rounded-4 shadow-sm"
+              />
+            </div>
+            <div class="col-lg-6">
+              <h2 class="section-title">Our Story</h2>
+              <p>
+                Linkfy was founded after repeated challenges in finding trusted local professionals for urgent home and
+                business jobs. The core idea was simple: make service hiring as dependable as modern banking apps.
+              </p>
+              <p class="mb-0">
+                The platform now supports end-to-end flows from discovery to negotiation, task tracking, and transparent
+                outcomes for both sides of the marketplace.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Our Team -->
-    <section class="py-5">
+      <section class="content-section bg-soft">
+        <div class="container">
+          <div class="text-center mb-5">
+            <h2 class="section-title">What We Stand For</h2>
+            <p class="section-subtitle">Every release is guided by reliability, user safety, and practical execution.</p>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+              <article class="info-card card border-0">
+                <div class="card-body">
+                  <div class="icon"><i class="bi bi-shield-lock"></i></div>
+                  <h3 class="h5">Trust by design</h3>
+                  <p class="mb-0">Identity verification, provider documents, and clear accountability pathways.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <article class="info-card card border-0">
+                <div class="card-body">
+                  <div class="icon"><i class="bi bi-lightning-charge"></i></div>
+                  <h3 class="h5">Faster matching</h3>
+                  <p class="mb-0">Location-aware search and category relevance reduce time to first qualified provider.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <article class="info-card card border-0">
+                <div class="card-body">
+                  <div class="icon"><i class="bi bi-chat-square-text"></i></div>
+                  <h3 class="h5">Clear communication</h3>
+                  <p class="mb-0">Real-time messaging with unread logic keeps conversations dependable and contextual.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <article class="info-card card border-0">
+                <div class="card-body">
+                  <div class="icon"><i class="bi bi-kanban"></i></div>
+                  <h3 class="h5">Visible progress</h3>
+                  <p class="mb-0">Task stages and plan tracking improve clarity from request to completion.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <div class="container">
+          <div class="row g-4 align-items-start">
+            <div class="col-lg-6">
+              <h2 class="section-title">Platform Snapshot</h2>
+              <p class="mb-4">Capabilities already reflected in your mobile app and backend architecture:</p>
+              <ul class="list-unstyled">
+                <li class="mb-3"><span class="legal-nav-chip"><i class="bi bi-check2-circle"></i> OTP-based signup and recovery flows</span></li>
+                <li class="mb-3"><span class="legal-nav-chip"><i class="bi bi-check2-circle"></i> Provider onboarding with ID and certification upload</span></li>
+                <li class="mb-3"><span class="legal-nav-chip"><i class="bi bi-check2-circle"></i> Plan board for seeker and provider tracking</span></li>
+                <li class="mb-3"><span class="legal-nav-chip"><i class="bi bi-check2-circle"></i> Inbox + chat persistence with deletion controls</span></li>
+                <li><span class="legal-nav-chip"><i class="bi bi-check2-circle"></i> Payments, transactions, and role-aware dashboards</span></li>
+              </ul>
+            </div>
+            <div class="col-lg-6">
+              <article class="cta-panel">
+                <h3 class="h4 mb-3">Our Mission</h3>
+                <p class="mb-3">
+                  Build the most dependable service marketplace in the region by combining secure identity, fast
+                  discovery, and transparent service execution.
+                </p>
+                <h3 class="h5 mb-3">Our Vision</h3>
+                <p class="mb-0">
+                  A future where anyone can confidently find and hire verified professionals for any everyday service need.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section bg-soft">
+        <div class="container">
+          <div class="text-center mb-5">
+            <h2 class="section-title">Leadership</h2>
+            <p class="section-subtitle">A practical team focused on execution, reliability, and user outcomes.</p>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <article class="service-card card border-0">
+                <img src="assets/images/ceo_roba.jpg" alt="Robert Muendo" />
+                <div class="card-body">
+                  <h3 class="h5">Robert Muendo</h3>
+                  <p class="text-muted mb-2">Founder & CEO</p>
+                  <p class="mb-0">Leads product strategy and marketplace growth for Linkfy.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-4">
+              <article class="service-card card border-0">
+                <img src="assets/images/jackie.jpeg" alt="Cynthia Kavetha" />
+                <div class="card-body">
+                  <h3 class="h5">Cynthia Kavetha</h3>
+                  <p class="text-muted mb-2">CTO</p>
+                  <p class="mb-0">Oversees platform architecture, quality, and security direction.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-4">
+              <article class="service-card card border-0">
+                <img src="assets/images/david.jpeg" alt="David Omondi" />
+                <div class="card-body">
+                  <h3 class="h5">David Omondi</h3>
+                  <p class="text-muted mb-2">Operations Lead</p>
+                  <p class="mb-0">Coordinates provider quality standards and platform operations.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
       <div class="container">
-        <h2 class="text-center mb-5">Meet Our Team</h2>
         <div class="row g-4">
-          <div class="col-md-4">
-            <div class="card border-0 shadow-sm h-100">
-              <img
-                src="assets/images/ceo_roba.jpg"
-                class="card-img-top1"
-                alt="Team Member"
-              />
-              <div class="card-body text-center">
-                <h5 class="card-title">Robert Muendo</h5>
-                <p class="text-primary">Founder & CEO</p>
-                <p class="card-text">
-                  With 4+ years in the service industry, Robert envisioned a
-                  better way to connect customers with professionals.
-                </p>
-              </div>
+          <div class="col-lg-4">
+            <div class="d-flex align-items-center mb-3">
+              <img src="assets/images/logo.png" alt="Linkfy logo" class="footer-logo" />
+              <h2 class="h5 ms-2 mb-0 text-white">Linkfy</h2>
+            </div>
+            <p class="mb-3">A trusted ecosystem for service requests, provider growth, and transparent execution.</p>
+            <div class="footer-social">
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" aria-label="X"><i class="fab fa-x-twitter"></i></a>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card border-0 shadow-sm h-100">
-              <img
-                src="assets/images/jackie.jpeg"
-                class="card-img-top1"
-                alt="Team Member"
-              />
-              <div class="card-body text-center">
-                <h5 class="card-title">Cynthia Kavetha</h5>
-                <p class="text-primary">CTO</p>
-                <p class="card-text">
-                  Cynthia leads our technology team, ensuring the platform is
-                  reliable, secure, and easy to use.
-                </p>
-              </div>
-            </div>
+          <div class="col-6 col-lg-2">
+            <h3 class="h6 text-white mb-3">Navigation</h3>
+            <ul class="list-unstyled m-0">
+              <li class="mb-2"><a href="index.html">Home</a></li>
+              <li class="mb-2"><a href="services.html">Services</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
           </div>
-          <div class="col-md-4">
-            <div class="card border-0 shadow-sm h-100">
-              <img
-                src="assets/images/david.jpeg"
-                class="card-img-top1"
-                alt="Team Member"
-              />
-              <div class="card-body text-center">
-                <h5 class="card-title">David Omondi</h5>
-                <p class="text-primary">Head of Operations</p>
-                <p class="card-text">
-                  David manages our network of service professionals, ensuring
-                  quality and reliability.
-                </p>
-              </div>
-            </div>
+          <div class="col-6 col-lg-3">
+            <h3 class="h6 text-white mb-3">Focus Areas</h3>
+            <ul class="list-unstyled m-0">
+              <li class="mb-2">Service quality and trust</li>
+              <li class="mb-2">Fast seeker-provider matching</li>
+              <li class="mb-2">Reliable in-app communication</li>
+              <li>Traceable request workflows</li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <h3 class="h6 text-white mb-3">Policies</h3>
+            <ul class="list-unstyled m-0">
+              <li class="mb-2"><a href="privacy.html">Privacy Policy</a></li>
+              <li class="mb-2"><a href="terms-of-service.html">Terms of Service</a></li>
+              <li><a href="do-not-sell-info.html">Data Controls</a></li>
+            </ul>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- Values -->
-    <section class="py-5 bg-primary text-white">
-      <div class="container">
-        <h2 class="text-center mb-5">Our Core Values</h2>
-        <div class="row g-4">
-          <div class="col-md-4">
-            <div class="text-center p-4">
-              <div class="icon-box bg-white text-primary mb-3">
-                <i class="fas fa-handshake"></i>
-              </div>
-              <h4>Trust</h4>
-              <p>
-                We verify all service providers to ensure they meet our high
-                standards of quality and reliability.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="text-center p-4">
-              <div class="icon-box bg-white text-primary mb-3">
-                <i class="fas fa-bolt"></i>
-              </div>
-              <h4>Efficiency</h4>
-              <p>
-                We save you time by connecting you with available professionals
-                who can help right away.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="text-center p-4">
-              <div class="icon-box bg-white text-primary mb-3">
-                <i class="fas fa-heart"></i>
-              </div>
-              <h4>Community</h4>
-              <p>
-                We support local businesses and help skilled professionals grow
-                their customer base.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <!-- Footer -->
-    <footer class="bg-dark text-white py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 mb-4 mb-lg-0">
-            <img
-              src="assets/images/logo.png"
-              alt="Linkfy Logo"
-              height="40"
-              class="mb-3"
-            />
-            <p>
-              Connecting service seekers with trusted professionals since 2025.
-            </p>
-            <div class="social-icons">
-              <a href="#" class="text-white me-3"
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a href="#" class="text-white me-3"
-                ><i class="fab fa-twitter"></i
-              ></a>
-              <a href="#" class="text-white me-3"
-                ><i class="fab fa-instagram"></i
-              ></a>
-              <a href="#" class="text-white"
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
-            <h5 class="mb-4">Quick Links</h5>
-            <ul class="list-unstyled">
-              <li class="mb-2">
-                <a href="index.html" class="text-white">Home</a>
-              </li>
-              <li class="mb-2">
-                <a href="services.html" class="text-white">Services</a>
-              </li>
-              <li class="mb-2">
-                <a href="about.html" class="text-white">About Us</a>
-              </li>
-              <li class="mb-2">
-                <a href="contact.html" class="text-white">Contact</a>
-              </li>
-              <li>
-                <a href="contact.html#faq" class="text-white">FAQ</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="mb-4">Services</h5>
-            <ul class="list-unstyled">
-              <li class="mb-2"><a href="#" class="text-white">Plumbing</a></li>
-              <li class="mb-2">
-                <a href="#" class="text-white">Electrical</a>
-              </li>
-              <li class="mb-2"><a href="#" class="text-white">Cleaning</a></li>
-              <li class="mb-2"><a href="#" class="text-white">Carpentry</a></li>
-              <li><a href="#" class="text-white">View All</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <h5 class="mb-4">Contact Us</h5>
-            <ul class="list-unstyled">
-              <li class="mb-3">
-                <i class="fas fa-map-marker-alt me-2"></i> 123 Service St,
-                Nairobi
-              </li>
-              <li class="mb-3">
-                <i class="fas fa-phone me-2"></i> +254 793587026
-              </li>
-              <li><i class="fas fa-envelope me-2"></i> info@linkfy.com</li>
-            </ul>
-          </div>
-        </div>
-        <hr class="my-4 bg-secondary" />
-        <div class="row">
-          <div class="col-md-6 text-center text-md-start">
-            <p class="mb-0">&copy; 2025 Linkfy. All rights reserved.</p>
-          </div>
-          <div class="col-md-6 text-center text-md-end">
-            <a href="privacy.html" class="text-white me-3">Privacy Policy</a>
-            <a href="terms-of-service.html" class="text-white me-3"
-              >Terms of Service</a
-            >
-            <a href="do-not-sell-info.html" class="text-white"
-              >Do Not Sell My Info</a
-            >
-          </div>
+        <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between gap-2">
+          <p class="mb-0">&copy; <span class="js-current-year"></span> Linkfy. All rights reserved.</p>
+          <p class="mb-0">Built to scale trust between customers and professionals.</p>
         </div>
       </div>
     </footer>
 
-    <!-- Bootstrap JS -->
-    <!-- Bootstrap JS -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/typed.js/typed.umd.js"></script>
-    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <!-- Custom JS -->
     <script src="assets/js/script.js"></script>
   </body>
 </html>

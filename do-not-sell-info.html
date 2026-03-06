@@ -3,331 +3,179 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Do Not Sell My Personal Information - Linkfy</title>
+    <meta
+      name="description"
+      content="Submit a Linkfy data-sharing opt-out request and manage personal information preferences."
+    />
+    <title>Data Sharing Opt-Out | Linkfy</title>
+
     <link href="assets/images/logo.png" rel="icon" />
-    <link href="assets/images/logo.png" rel="linkfy-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
-    <link
-      href="assets/vendor/glightbox/css/glightbox.min.css"
-      rel="stylesheet"
-    />
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
-    <!-- Custom CSS -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
   </head>
   <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <div class="site-topbar">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="topbar-meta">
+          <a href="tel:+254793587026"><i class="bi bi-telephone"></i> +254 793 587 026</a>
+          <a href="mailto:privacy@linkfy.co.ke"><i class="bi bi-envelope"></i> privacy@linkfy.co.ke</a>
+        </div>
+        <div class="topbar-links">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms-of-service.html">Terms</a>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light site-navbar">
       <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <img src="assets/images/logo.png" alt="Linkfy Logo" height="40" />
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="assets/images/logo.png" alt="Linkfy" class="brand-logo" />
+          <span class="brand-text">Linkfy</span>
         </a>
+
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="services.html">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="btn btn-outline-light ms-lg-3"
-                href="/index.html#download"
-                >Download App</a
-              >
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+            <li class="nav-item"><a class="nav-link" data-page="index.html" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" data-page="services.html" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" data-page="about.html" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" data-page="contact.html" href="contact.html">Contact</a></li>
+            <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+              <a class="btn btn-primary nav-cta" href="index.html#download">Get the App</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <!-- Do Not Sell Header -->
-    <section class="py-5 bg-light mt-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-center">
-            <h1 class="display-4 fw-bold">
-              Do Not Share My Personal Information
-            </h1>
-            <p class="lead">Your Kenya Privacy Rights</p>
-          </div>
+    <main>
+      <section class="doc-hero">
+        <div class="container text-center">
+          <span class="legal-nav-chip mb-3"><i class="bi bi-sliders"></i> Personal data controls</span>
+          <h1 class="section-title mb-2">Do Not Sell or Share My Personal Information</h1>
+          <p class="section-subtitle">Last updated: March 6, 2026</p>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Do Not Sell Content -->
-    <section class="py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <div class="mb-5">
-              <p>
-                Under the Kenya Data Protection Act (DPA), residents have the
-                right to control how their personal data is processed. Linkfy
-                respects your privacy and provides this page to inform you of
-                your rights and how to exercise them.
-              </p>
+      <section class="content-section pt-3">
+        <div class="container">
+          <div class="row g-4 align-items-start">
+            <div class="col-lg-6">
+              <article class="doc-card mb-3">
+                <h2 class="h4">Your Rights</h2>
+                <p>
+                  Depending on where you live, you may have the right to opt out of data sharing for certain purposes,
+                  request data access, or request deletion.
+                </p>
+                <ul>
+                  <li>Submit an opt-out request through this form.</li>
+                  <li>Request review, correction, or deletion of your personal data.</li>
+                  <li>Authorize an agent to submit requests on your behalf, where legally permitted.</li>
+                </ul>
+              </article>
+
+              <article class="doc-card">
+                <h2 class="h4">How We Process Requests</h2>
+                <ol>
+                  <li>We verify request identity to prevent unauthorized actions.</li>
+                  <li>We log and track request status for compliance records.</li>
+                  <li>We confirm completion by email once processing is finished.</li>
+                </ol>
+                <p class="mb-0">Typical response window: up to 30 days, subject to law and request complexity.</p>
+              </article>
             </div>
 
-            <div class="mb-5">
-              <h2 class="mb-3">What Does "Sharing of Personal Data" Mean?</h2>
-              <p>
-                The DPA defines sharing or processing of personal data as any
-                action involving collecting, storing, disclosing, or
-                transferring your information. While Linkfy does not misuse your
-                personal data, we may share certain information with trusted
-                third parties such as advertising and analytics partners, to
-                improve our services.
-              </p>
-            </div>
+            <div class="col-lg-6">
+              <article class="doc-card">
+                <h2 class="h4 mb-3">Submit Opt-Out Request</h2>
+                <form id="doNotSellForm" novalidate>
+                  <div class="success-banner" aria-live="polite"></div>
 
-            <div class="mb-5">
-              <h2 class="mb-3">How to Opt-Out</h2>
-              <p>
-                If you are a resident of Kenya, you may opt-out of the sharing
-                of your personal information by:
-              </p>
-              <ol>
-                <li>
-                  Clicking the "Do Not Share My Personal Information" link in
-                  our website footer
-                </li>
-                <li>Submitting a request through our online form below</li>
-                <li>
-                  Emailing us at
-                  <a href="mailto:privacy@linkfy.com">privacy@linkfy.com</a>
-                  with the subject line "Data Sharing Opt-Out Request"
-                </li>
-              </ol>
-            </div>
+                  <div class="mb-3">
+                    <label for="fullName" class="form-label">Full Name</label>
+                    <input type="text" id="fullName" class="form-control" required />
+                  </div>
 
-            <div class="mb-5">
-              <h2 class="mb-3">Online Opt-Out Request Form</h2>
-              <div class="card shadow-sm">
-                <div class="card-body">
-                  <form id="doNotSellForm">
-                    <div class="mb-3">
-                      <label for="fullName" class="form-label">Full Name</label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="fullName"
-                        required
-                      />
-                    </div>
-                    <div class="mb-3">
-                      <label for="email" class="form-label"
-                        >Email Address</label
-                      >
-                      <input
-                        type="email"
-                        class="form-control"
-                        id="email"
-                        required
-                      />
-                    </div>
-                    <div class="mb-3">
-                      <label for="phone" class="form-label"
-                        >Phone Number (Optional)</label
-                      >
-                      <input type="tel" class="form-control" id="phone" />
-                    </div>
-                    <div class="mb-3">
-                      <label for="requestDetails" class="form-label"
-                        >Request Details</label
-                      >
-                      <textarea
-                        class="form-control"
-                        id="requestDetails"
-                        rows="3"
-                        required
-                      >
-I would like to opt-out of the sharing of my personal information under the Kenya Data Protection Act.</textarea
-                      >
-                    </div>
-                    <div class="mb-3 form-check">
-                      <input
-                        type="checkbox"
-                        class="form-check-input"
-                        id="verifyIdentity"
-                        required
-                      />
-                      <label class="form-check-label" for="verifyIdentity">
-                        I verify that I am the consumer whose personal data is
-                        the subject of this request
-                      </label>
-                    </div>
-                    <button type="submit" class="btn btn-primary">
-                      Submit Request
-                    </button>
-                  </form>
-                </div>
-              </div>
-            </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" id="email" class="form-control" required />
+                  </div>
 
-            <div class="mb-5">
-              <h2 class="mb-3">What Happens After I Opt-Out?</h2>
-              <p>
-                Once we receive and verify your request, we will stop sharing
-                your personal information for purposes outlined in this notice.
-                We will process your request within a reasonable time, typically
-                no longer than 30 days, though certain exceptions may apply.
-              </p>
-            </div>
+                  <div class="mb-3">
+                    <label for="phone" class="form-label">Phone Number (Optional)</label>
+                    <input type="tel" id="phone" class="form-control" />
+                  </div>
 
-            <div class="mb-5">
-              <h2 class="mb-3">Authorized Representatives</h2>
-              <p>
-                You may authorize a representative to make requests on your
-                behalf. The representative must provide proof of your
-                permission, and we may require additional verification before
-                acting on your request.
-              </p>
-            </div>
+                  <div class="mb-3">
+                    <label for="requestDetails" class="form-label">Request Details</label>
+                    <textarea
+                      id="requestDetails"
+                      rows="4"
+                      class="form-control"
+                      required
+                    >I would like to opt out of data sharing as permitted under applicable privacy laws.</textarea>
+                  </div>
 
-            <div>
-              <h2 class="mb-3">Non-Discrimination</h2>
-              <p>
-                We will not treat you unfairly or deny access to our services
-                for exercising your rights under the Kenya Data Protection Act.
-              </p>
+                  <div class="form-check mb-4">
+                    <input type="checkbox" id="verifyIdentity" class="form-check-input" required />
+                    <label class="form-check-label" for="verifyIdentity">
+                      I confirm this request relates to my personal information or I am authorized to act on the user's behalf.
+                    </label>
+                  </div>
+
+                  <button type="submit" class="btn btn-primary">Submit Request</button>
+                </form>
+              </article>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white py-5">
+    <footer class="site-footer">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-4 mb-4 mb-lg-0">
-            <img
-              src="assets/images/logo.png"
-              alt="Linkfy Logo"
-              height="40"
-              class="mb-3"
-            />
-            <p>
-              Connecting service seekers with trusted professionals since 2025.
-            </p>
-            <div class="social-icons">
-              <a href="#" class="text-white me-3"
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a href="#" class="text-white me-3"
-                ><i class="fab fa-twitter"></i
-              ></a>
-              <a href="#" class="text-white me-3"
-                ><i class="fab fa-instagram"></i
-              ></a>
-              <a href="#" class="text-white"
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="d-flex align-items-center mb-3">
+              <img src="assets/images/logo.png" alt="Linkfy logo" class="footer-logo" />
+              <h2 class="h5 ms-2 mb-0 text-white">Linkfy</h2>
             </div>
+            <p class="mb-0">Data transparency and user control are built into our platform governance.</p>
           </div>
-          <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
-            <h5 class="mb-4">Quick Links</h5>
-            <ul class="list-unstyled">
-              <li class="mb-2">
-                <a href="index.html" class="text-white">Home</a>
-              </li>
-              <li class="mb-2">
-                <a href="services.html" class="text-white">Services</a>
-              </li>
-              <li class="mb-2">
-                <a href="about.html" class="text-white">About Us</a>
-              </li>
-              <li class="mb-2">
-                <a href="contact.html" class="text-white">Contact</a>
-              </li>
-              <li><a href="contact.html#faq" class="text-white">FAQ</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="mb-4">Services</h5>
-            <ul class="list-unstyled">
-              <li class="mb-2"><a href="#" class="text-white">Plumbing</a></li>
-              <li class="mb-2">
-                <a href="#" class="text-white">Electrical</a>
-              </li>
-              <li class="mb-2"><a href="#" class="text-white">Cleaning</a></li>
-              <li class="mb-2"><a href="#" class="text-white">Carpentry</a></li>
-              <li><a href="#" class="text-white">View All</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <h5 class="mb-4">Contact Us</h5>
-            <ul class="list-unstyled">
-              <li class="mb-3">
-                <i class="fas fa-map-marker-alt me-2"></i> 123 Service St,
-                Nairobi
-              </li>
-              <li class="mb-3">
-                <i class="fas fa-phone me-2"></i> +254 793587026
-              </li>
-              <li><i class="fas fa-envelope me-2"></i> info@linkfy.com</li>
-            </ul>
+          <div class="col-lg-8 d-flex flex-wrap gap-3 justify-content-lg-end align-items-start">
+            <a href="privacy.html" class="legal-nav-chip">Privacy Policy</a>
+            <a href="terms-of-service.html" class="legal-nav-chip">Terms of Service</a>
+            <a href="contact.html" class="legal-nav-chip">Contact</a>
           </div>
         </div>
-        <hr class="my-4 bg-secondary" />
-        <div class="row">
-          <div class="col-md-6 text-center text-md-start">
-            <p class="mb-0">&copy; 2025 Linkfy. All rights reserved.</p>
-          </div>
-          <div class="col-md-6 text-center text-md-end">
-            <a href="privacy.html" class="text-white me-3">Privacy Policy</a>
-            <a href="terms-of-service.html" class="text-white me-3"
-              >Terms of Service</a
-            >
-            <a href="do-not-sell-info.html" class="text-white"
-              >Do Not Sell My Info</a
-            >
-          </div>
+
+        <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between gap-2">
+          <p class="mb-0">&copy; <span class="js-current-year"></span> Linkfy. All rights reserved.</p>
+          <p class="mb-0"><a href="index.html">Return to home</a></p>
         </div>
       </div>
     </footer>
 
-    <!-- Bootstrap JS -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/typed.js/typed.umd.js"></script>
-    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <!-- Custom JS -->
     <script src="assets/js/script.js"></script>
   </body>
 </html>

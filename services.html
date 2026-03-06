@@ -3,498 +3,319 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Services - Linkfy | Find Trusted Professionals</title>
+    <meta
+      name="description"
+      content="Browse Linkfy service categories: plumbing, electrical, driver services, cleaning, web design, IT support, and more."
+    />
+    <title>Services | Linkfy</title>
 
     <link href="assets/images/logo.png" rel="icon" />
-    <link href="assets/images/logo.png" rel="linkfy-icon" />
-    <!-- Bootstrap CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
-    <link
-      href="assets/vendor/glightbox/css/glightbox.min.css"
-      rel="stylesheet"
-    />
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <!-- Font Awesome -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <div class="site-topbar">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="topbar-meta">
+          <a href="tel:+254793587026"><i class="bi bi-telephone"></i> +254 793 587 026</a>
+          <a href="mailto:support@linkfy.co.ke"><i class="bi bi-envelope"></i> support@linkfy.co.ke</a>
+        </div>
+        <div class="topbar-links">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms-of-service.html">Terms</a>
+          <a href="do-not-sell-info.html">Data Controls</a>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light site-navbar">
       <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <img src="assets/images/logo.png" alt="Linkfy Logo" height="40" />
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="assets/images/logo.png" alt="Linkfy" class="brand-logo" />
+          <span class="brand-text">Linkfy</span>
         </a>
+
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="services.html">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="btn btn-outline-light ms-lg-3"
-                href="/index.html#download"
-                >Download App</a
-              >
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+            <li class="nav-item"><a class="nav-link" data-page="index.html" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" data-page="services.html" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" data-page="about.html" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" data-page="contact.html" href="contact.html">Contact</a></li>
+            <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+              <a class="btn btn-primary nav-cta" href="index.html#download">Get the App</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <!-- Services Hero Section -->
-    <section class="hero-section bg-light">
-      <div class="container py-5">
-        <div class="row align-items-center">
-          <div class="col-lg-6">
-            <h1 class="display-4 fw-bold mb-4">Our Services</h1>
-            <p class="lead mb-4">
-              Find trusted professionals for all your home and business service
-              needs.
-            </p>
-          </div>
-          <div class="col-lg-6">
-            <img
-              src="assets/images/hero-image3.jpeg"
-              alt="Linkfy Services"
-              class="img-fluid rounded"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- All Services -->
-    <section class="py-5">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-12">
-            <div class="input-group mb-3">
-              <input
-                type="text"
-                class="form-control form-control-lg"
-                placeholder="Search services..."
-              />
-              <button class="btn btn-primary" type="button">Search</button>
+    <main>
+      <section class="hero-section pb-4">
+        <span class="hero-blob blob-a" aria-hidden="true"></span>
+        <div class="container position-relative">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-7">
+              <div class="hero-kicker"><i class="bi bi-grid"></i> Service catalog synced with app backend</div>
+              <h1 class="hero-title">Find professionals across home, mobility, digital, and business services.</h1>
+              <p class="hero-subtitle mb-0">
+                Linkfy currently supports 100 service categories in the backend. This page highlights core categories,
+                while niche services become discoverable through in-app search.
+              </p>
+            </div>
+            <div class="col-lg-5">
+              <div class="phone-shell">
+                <img
+                  src="assets/images/Screenshot_1.jpg"
+                  alt="Linkfy app service categories"
+                  class="phone-screen screenshot-media"
+                />
+              </div>
             </div>
           </div>
         </div>
+      </section>
 
+      <section class="content-section pt-4">
+        <div class="container">
+          <div class="row g-3 align-items-center mb-4">
+            <div class="col-lg-8">
+              <label for="serviceSearchInput" class="form-label fw-semibold">Search category</label>
+              <div class="input-group">
+                <span class="input-group-text bg-white border-end-0"><i class="bi bi-search"></i></span>
+                <input
+                  id="serviceSearchInput"
+                  type="text"
+                  class="form-control border-start-0"
+                  placeholder="Try plumber, driver, website design, security, cleaning..."
+                />
+              </div>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+              <p id="servicesResultCount" class="result-count mb-0"></p>
+            </div>
+          </div>
+
+          <div class="row g-4" id="servicesGrid">
+            <div class="col-sm-6 col-lg-4 service-col" data-tags="plumbing pipe leak drainage water repair home maintenance">
+              <article class="service-card card border-0 h-100">
+                <img src="assets/images/plumbing.jpeg" alt="Plumbing services" />
+                <div class="card-body">
+                  <h3>Plumbing Services</h3>
+                  <p class="mb-0">Leak fixes, installations, and emergency plumbing support.</p>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 service-col" data-tags="electrical wiring installation lighting power panel">
+              <article class="service-card card border-0 h-100">
+                <img src="assets/images/electrical.jpeg" alt="Electrical services" />
+                <div class="card-body">
+                  <h3>Electrical Installations</h3>
+                  <p class="mb-0">Safe wiring, power diagnostics, and lighting upgrades.</p>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 service-col" data-tags="cleaning office home deep sanitization housekeeping">
+              <article class="service-card card border-0 h-100">
+                <img src="assets/images/cleaning.jpeg" alt="Cleaning services" />
+                <div class="card-body">
+                  <h3>House & Office Cleaning</h3>
+                  <p class="mb-0">Routine, deep, and specialized cleanup services.</p>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 service-col" data-tags="carpentry furniture cabinets wood repair fitting">
+              <article class="service-card card border-0 h-100">
+                <img src="assets/images/capentry.jpeg" alt="Carpentry services" />
+                <div class="card-body">
+                  <h3>Carpentry</h3>
+                  <p class="mb-0">Custom furniture, repairs, and wood finishing.</p>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 service-col" data-tags="painting interior exterior finishing wall decorative">
+              <article class="service-card card border-0 h-100">
+                <img src="assets/images/paainting.jpeg" alt="Painting services" />
+                <div class="card-body">
+                  <h3>Painting Services</h3>
+                  <p class="mb-0">Interior and exterior paint jobs with pro finishing.</p>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 service-col" data-tags="hvac air conditioning heating ventilation maintenance">
+              <article class="service-card card border-0 h-100">
+                <img src="assets/images/hvac.jpeg" alt="HVAC services" />
+                <div class="card-body">
+                  <h3>HVAC Services</h3>
+                  <p class="mb-0">AC install/repair, ventilation and heating support.</p>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 service-col" data-tags="driver chauffeur transport delivery logistics personal">
+              <article class="service-card card border-0 h-100">
+                <img src="assets/images/hero-image3.jpeg" alt="Driver services" />
+                <div class="card-body">
+                  <h3>Driver Services</h3>
+                  <p class="mb-0">Personal, event, and corporate transport solutions.</p>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 service-col" data-tags="website design ui ux web development landing page">
+              <article class="service-card card border-0 h-100">
+                <img src="assets/images/laptop1.jpg" alt="Website design service" />
+                <div class="card-body">
+                  <h3>Website Design</h3>
+                  <p class="mb-0">Landing pages, portfolio websites, and redesigns.</p>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 service-col" data-tags="mobile app development android ios software">
+              <article class="service-card card border-0 h-100">
+                <img
+                  src="assets/images/Screenshot_2.jpg"
+                  alt="Mobile app development service"
+                  class="screenshot-card-image"
+                />
+                <div class="card-body">
+                  <h3>Mobile App Development</h3>
+                  <p class="mb-0">Android and cross-platform app build support.</p>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 service-col" data-tags="security cctv surveillance alarm guard">
+              <article class="service-card card border-0 h-100">
+                <img src="assets/images/contact-us1.jpeg" alt="Security and CCTV services" />
+                <div class="card-body">
+                  <h3>CCTV & Security Setup</h3>
+                  <p class="mb-0">Camera installation, monitoring, and access control.</p>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 service-col" data-tags="gardening landscaping lawn trimming outdoor maintenance">
+              <article class="service-card card border-0 h-100">
+                <img src="assets/images/our_story.jpeg" alt="Gardening services" />
+                <div class="card-body">
+                  <h3>Gardening Services</h3>
+                  <p class="mb-0">Landscaping, lawn care, and compound maintenance.</p>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 service-col" data-tags="it support cyber security network setup troubleshooting">
+              <article class="service-card card border-0 h-100">
+                <img src="assets/images/hero-image2.jpeg" alt="IT support services" />
+                <div class="card-body">
+                  <h3>IT Support & Cyber Security</h3>
+                  <p class="mb-0">Business IT troubleshooting, network setup, and hardening.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="cta-panel mt-5">
+            <div class="row align-items-center g-3">
+              <div class="col-lg-8">
+                <h2 class="h3 mb-2">Need a specialized service not listed above?</h2>
+                <p class="mb-0">
+                  The full backend catalog already has 100 categories, with some niche services shown only through search
+                  to keep discovery fast and relevant.
+                </p>
+              </div>
+              <div class="col-lg-4 text-lg-end">
+                <a href="contact.html" class="btn btn-light">Request Category Support</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
         <div class="row g-4">
-          <!-- Plumbing -->
-          <div class="col-md-6 col-lg-4">
-            <div class="card service-card h-100 border-0 shadow-sm">
-              <img
-                src="assets/images/plumbing.jpeg"
-                class="card-img-top"
-                alt="Plumbing"
-              />
-              <div class="card-body">
-                <h3 class="card-title">Plumbing Services</h3>
-                <p class="card-text">
-                  Professional plumbing solutions for homes and businesses.
-                </p>
-                <ul class="list-unstyled mb-4">
-                  <li class="mb-2">
-                    <i class="fas fa-check-circle text-primary me-2"></i> Leak
-                    repairs
-                  </li>
-                  <li class="mb-2">
-                    <i class="fas fa-check-circle text-primary me-2"></i> Pipe
-                    installations
-                  </li>
-                  <li class="mb-2">
-                    <i class="fas fa-check-circle text-primary me-2"></i> Drain
-                    cleaning
-                  </li>
-                  <li>
-                    <i class="fas fa-check-circle text-primary me-2"></i> Water
-                    heater services
-                  </li>
-                </ul>
-                <a href="#" class="btn btn-primary">Find Plumbers</a>
-              </div>
+          <div class="col-lg-4">
+            <div class="d-flex align-items-center mb-3">
+              <img src="assets/images/logo.png" alt="Linkfy logo" class="footer-logo" />
+              <h2 class="h5 ms-2 mb-0 text-white">Linkfy</h2>
+            </div>
+            <p class="mb-3">Discover professionals quickly with location-based matching and secure in-app workflows.</p>
+            <div class="footer-social">
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" aria-label="X"><i class="fab fa-x-twitter"></i></a>
             </div>
           </div>
 
-          <!-- Electrical -->
-          <div class="col-md-6 col-lg-4">
-            <div class="card service-card h-100 border-0 shadow-sm">
-              <img
-                src="assets/images/electrical.jpeg"
-                class="card-img-top"
-                alt="Electrical"
-              />
-              <div class="card-body">
-                <h3 class="card-title">Electrical Services</h3>
-                <p class="card-text">
-                  Safe and reliable electrical work by certified professionals.
-                </p>
-                <ul class="list-unstyled mb-4">
-                  <li class="mb-2">
-                    <i class="fas fa-check-circle text-primary me-2"></i> Wiring
-                    & installations
-                  </li>
-                  <li class="mb-2">
-                    <i class="fas fa-check-circle text-primary me-2"></i>
-                    Lighting solutions
-                  </li>
-                  <li class="mb-2">
-                    <i class="fas fa-check-circle text-primary me-2"></i>
-                    Electrical repairs
-                  </li>
-                  <li>
-                    <i class="fas fa-check-circle text-primary me-2"></i> Safety
-                    inspections
-                  </li>
-                </ul>
-                <a href="#" class="btn btn-primary">Find Electricians</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Cleaning -->
-          <div class="col-md-6 col-lg-4">
-            <div class="card service-card h-100 border-0 shadow-sm">
-              <img
-                src="assets/images/cleaning.jpeg"
-                class="card-img-top"
-                alt="Cleaning"
-              />
-              <div class="card-body">
-                <h3 class="card-title">Cleaning Services</h3>
-                <p class="card-text">
-                  Professional cleaning for homes, offices, and more.
-                </p>
-                <ul class="list-unstyled mb-4">
-                  <li class="mb-2">
-                    <i class="fas fa-check-circle text-primary me-2"></i> Home
-                    cleaning
-                  </li>
-                  <li class="mb-2">
-                    <i class="fas fa-check-circle text-primary me-2"></i> Office
-                    cleaning
-                  </li>
-                  <li class="mb-2">
-                    <i class="fas fa-check-circle text-primary me-2"></i> Deep
-                    cleaning
-                  </li>
-                  <li>
-                    <i class="fas fa-check-circle text-primary me-2"></i>
-                    Post-construction cleaning
-                  </li>
-                </ul>
-                <a href="#" class="btn btn-primary">Find Cleaners</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Carpentry -->
-          <div class="col-md-6 col-lg-4">
-            <div class="card service-card h-100 border-0 shadow-sm">
-              <img
-                src="assets/images/capentry.jpeg"
-                class="card-img-top"
-                alt="Carpentry"
-              />
-              <div class="card-body">
-                <h3 class="card-title">Carpentry Services</h3>
-                <p class="card-text">
-                  Quality woodwork and furniture solutions.
-                </p>
-                <ul class="list-unstyled mb-4">
-                  <li class="mb-2">
-                    <i class="fas fa-check-circle text-primary me-2"></i>
-                    Furniture making
-                  </li>
-                  <li class="mb-2">
-                    <i class="fas fa-check-circle text-primary me-2"></i>
-                    Cabinet installations
-                  </li>
-                  <li class="mb-2">
-                    <i class="fas fa-check-circle text-primary me-2"></i> Wooden
-                    floor installation
-                  </li>
-                  <li>
-                    <i class="fas fa-check-circle text-primary me-2"></i>
-                    General repairs
-                  </li>
-                </ul>
-                <a href="#" class="btn btn-primary">Find Carpenters</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Painting -->
-          <div class="col-md-6 col-lg-4">
-            <div class="card service-card h-100 border-0 shadow-sm">
-              <img
-                src="assets/images/paainting.jpeg"
-                class="card-img-top"
-                alt="Painting"
-              />
-              <div class="card-body">
-                <h3 class="card-title">Painting Services</h3>
-                <p class="card-text">
-                  Professional painting for interiors and exteriors.
-                </p>
-                <ul class="list-unstyled mb-4">
-                  <li class="mb-2">
-                    <i class="fas fa-check-circle text-primary me-2"></i> Wall
-                    painting
-                  </li>
-                  <li class="mb-2">
-                    <i class="fas fa-check-circle text-primary me-2"></i>
-                    Exterior painting
-                  </li>
-                  <li class="mb-2">
-                    <i class="fas fa-check-circle text-primary me-2"></i>
-                    Wallpaper installation
-                  </li>
-                  <li>
-                    <i class="fas fa-check-circle text-primary me-2"></i>
-                    Decorative finishes
-                  </li>
-                </ul>
-                <a href="#" class="btn btn-primary">Find Painters</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- HVAC -->
-          <div class="col-md-6 col-lg-4">
-            <div class="card service-card h-100 border-0 shadow-sm">
-              <img
-                src="assets/images/hvac.jpeg"
-                class="card-img-top"
-                alt="HVAC"
-              />
-              <div class="card-body">
-                <h3 class="card-title">HVAC Services</h3>
-                <p class="card-text">
-                  Heating, ventilation and air conditioning solutions.
-                </p>
-                <ul class="list-unstyled mb-4">
-                  <li class="mb-2">
-                    <i class="fas fa-check-circle text-primary me-2"></i> AC
-                    installation
-                  </li>
-                  <li class="mb-2">
-                    <i class="fas fa-check-circle text-primary me-2"></i> AC
-                    repair & maintenance
-                  </li>
-                  <li class="mb-2">
-                    <i class="fas fa-check-circle text-primary me-2"></i>
-                    Ventilation systems
-                  </li>
-                  <li>
-                    <i class="fas fa-check-circle text-primary me-2"></i>
-                    Heating solutions
-                  </li>
-                </ul>
-                <a href="#" class="btn btn-primary">Find HVAC Experts</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="text-center mt-5">
-          <h3 class="mb-4">Don't see the service you need?</h3>
-          <p class="lead mb-4">
-            We're constantly adding new service categories to meet our
-            customers' needs.
-          </p>
-          <a href="contact.html" class="btn btn-outline-primary btn-lg"
-            >Request a Service</a
-          >
-        </div>
-      </div>
-    </section>
-
-    <!-- Why Choose Us -->
-    <section class="py-5 bg-light">
-      <div class="container">
-        <h2 class="text-center mb-5">Why Choose Linkfy Professionals</h2>
-        <div class="row g-4">
-          <div class="col-md-4">
-            <div class="card border-0 bg-transparent h-100">
-              <div class="card-body text-center">
-                <div class="icon-box bg-primary mb-3">
-                  <i class="fas fa-shield-alt text-white"></i>
-                </div>
-                <h4>Verified Professionals</h4>
-                <p>
-                  All service providers undergo background checks and
-                  verification before joining our platform.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card border-0 bg-transparent h-100">
-              <div class="card-body text-center">
-                <div class="icon-box bg-primary mb-3">
-                  <i class="fas fa-star text-white"></i>
-                </div>
-                <h4>Customer Ratings</h4>
-                <p>
-                  Read real reviews from other customers to help you choose the
-                  right professional.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card border-0 bg-transparent h-100">
-              <div class="card-body text-center">
-                <div class="icon-box bg-primary mb-3">
-                  <i class="fas fa-lock text-white"></i>
-                </div>
-                <h4>Secure Payments</h4>
-                <p>
-                  Pay securely through the app with multiple payment options
-                  available.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <!-- Footer -->
-    <footer class="bg-dark text-white py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 mb-4 mb-lg-0">
-            <img
-              src="assets/images/logo.png"
-              alt="Linkfy Logo"
-              height="40"
-              class="mb-3"
-            />
-            <p>
-              Connecting service seekers with trusted professionals since 2025.
-            </p>
-            <div class="social-icons">
-              <a href="#" class="text-white me-3"
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a href="#" class="text-white me-3"
-                ><i class="fab fa-twitter"></i
-              ></a>
-              <a href="#" class="text-white me-3"
-                ><i class="fab fa-instagram"></i
-              ></a>
-              <a href="#" class="text-white"
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
-            <h5 class="mb-4">Quick Links</h5>
-            <ul class="list-unstyled">
-              <li class="mb-2">
-                <a href="index.html" class="text-white">Home</a>
-              </li>
-              <li class="mb-2">
-                <a href="services.html" class="text-white">Services</a>
-              </li>
-              <li class="mb-2">
-                <a href="about.html" class="text-white">About Us</a>
-              </li>
-              <li class="mb-2">
-                <a href="contact.html" class="text-white">Contact</a>
-              </li>
-              <li><a href="contact.html#faq" class="text-white">FAQ</a></li>
+          <div class="col-6 col-lg-2">
+            <h3 class="h6 text-white mb-3">Navigation</h3>
+            <ul class="list-unstyled m-0">
+              <li class="mb-2"><a href="index.html">Home</a></li>
+              <li class="mb-2"><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
             </ul>
           </div>
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="mb-4">Services</h5>
-            <ul class="list-unstyled">
-              <li class="mb-2"><a href="#" class="text-white">Plumbing</a></li>
-              <li class="mb-2">
-                <a href="#" class="text-white">Electrical</a>
-              </li>
-              <li class="mb-2"><a href="#" class="text-white">Cleaning</a></li>
-              <li class="mb-2"><a href="#" class="text-white">Carpentry</a></li>
-              <li><a href="#" class="text-white">View All</a></li>
+
+          <div class="col-6 col-lg-3">
+            <h3 class="h6 text-white mb-3">Top Categories</h3>
+            <ul class="list-unstyled m-0">
+              <li class="mb-2">Plumbing & Electrical</li>
+              <li class="mb-2">Cleaning & Carpentry</li>
+              <li class="mb-2">Driver & Logistics</li>
+              <li>Web, IT & Security Services</li>
             </ul>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <h5 class="mb-4">Contact Us</h5>
-            <ul class="list-unstyled">
-              <li class="mb-3">
-                <i class="fas fa-map-marker-alt me-2"></i> 123 Service St,
-                Nairobi
-              </li>
-              <li class="mb-3">
-                <i class="fas fa-phone me-2"></i> +254 793587026
-              </li>
-              <li><i class="fas fa-envelope me-2"></i> info@linkfy.com</li>
+
+          <div class="col-lg-3">
+            <h3 class="h6 text-white mb-3">Policies</h3>
+            <ul class="list-unstyled m-0">
+              <li class="mb-2"><a href="privacy.html">Privacy Policy</a></li>
+              <li class="mb-2"><a href="terms-of-service.html">Terms of Service</a></li>
+              <li><a href="do-not-sell-info.html">Data Controls</a></li>
             </ul>
           </div>
         </div>
-        <hr class="my-4 bg-secondary" />
-        <div class="row">
-          <div class="col-md-6 text-center text-md-start">
-            <p class="mb-0">&copy; 2025 Linkfy. All rights reserved.</p>
-          </div>
-          <div class="col-md-6 text-center text-md-end">
-            <a href="privacy.html" class="text-white me-3">Privacy Policy</a>
-            <a href="terms-of-service.html" class="text-white me-3"
-              >Terms of Service</a
-            >
-            <a href="do-not-sell-info.html" class="text-white"
-              >Do Not Sell My Info</a
-            >
-          </div>
+
+        <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between gap-2">
+          <p class="mb-0">&copy; <span class="js-current-year"></span> Linkfy. All rights reserved.</p>
+          <p class="mb-0">Built for secure, trackable service delivery.</p>
         </div>
       </div>
     </footer>
 
-    <!-- Bootstrap JS -->
-    <!-- Bootstrap JS -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/typed.js/typed.umd.js"></script>
-    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <!-- Custom JS -->
     <script src="assets/js/script.js"></script>
   </body>
 </html>
